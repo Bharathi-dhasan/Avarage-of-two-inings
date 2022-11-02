@@ -1,0 +1,30 @@
+import java.util.*; 
+public class Main {
+public static void main(String[] args) { 
+    Scanner s=new Scanner(System.in);
+    int a=s.nextInt();
+    String z[]=new String[(a*2)];
+     String c=new String("");
+    String b[]=new String[(a*2)+1]; 
+    int e=0;
+    
+    float r=0,t=0; 
+    for(int i=0;i<a+1;i++){
+    c=s.nextLine(); 
+    z=c.split(" ");
+    for(String w:z){
+    b[e]=w;
+    e++;
+    }}
+    for(int i=1;i<b.length;i++){
+       if(i%2!=0)
+            {r+=Float.parseFloat(b[i]);
+            }
+        else 
+            t+=Float.parseFloat(b[i]);
+    }
+    System.out.printf("%.2f\n",r/a);
+    System.out.printf("%.2f",t/a);
+    
+}
+}
